@@ -15,6 +15,10 @@
 		274EC7F61F0168F200925865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274EC7F41F0168F200925865 /* LaunchScreen.storyboard */; };
 		274EC8011F0168F200925865 /* JPDownLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8001F0168F200925865 /* JPDownLoaderTests.m */; };
 		274EC80C1F0168F200925865 /* JPDownLoaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC80B1F0168F200925865 /* JPDownLoaderUITests.m */; };
+		274EC8221F01691E00925865 /* NSString+SZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC81B1F01691E00925865 /* NSString+SZ.m */; };
+		274EC8231F01691E00925865 /* JPDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC81D1F01691E00925865 /* JPDownLoader.m */; };
+		274EC8241F01691E00925865 /* JPDownLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC81F1F01691E00925865 /* JPDownLoaderManager.m */; };
+		274EC8251F01691E00925865 /* JPFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 274EC8211F01691E00925865 /* JPFileTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		274EC8071F0168F200925865 /* JPDownLoaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPDownLoaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		274EC80B1F0168F200925865 /* JPDownLoaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPDownLoaderUITests.m; sourceTree = "<group>"; };
 		274EC80D1F0168F200925865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274EC81A1F01691E00925865 /* NSString+SZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SZ.h"; sourceTree = "<group>"; };
+		274EC81B1F01691E00925865 /* NSString+SZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SZ.m"; sourceTree = "<group>"; };
+		274EC81C1F01691E00925865 /* JPDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDownLoader.h; sourceTree = "<group>"; };
+		274EC81D1F01691E00925865 /* JPDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDownLoader.m; sourceTree = "<group>"; };
+		274EC81E1F01691E00925865 /* JPDownLoaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDownLoaderManager.h; sourceTree = "<group>"; };
+		274EC81F1F01691E00925865 /* JPDownLoaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDownLoaderManager.m; sourceTree = "<group>"; };
+		274EC8201F01691E00925865 /* JPFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFileTool.h; sourceTree = "<group>"; };
+		274EC8211F01691E00925865 /* JPFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFileTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		274EC7E51F0168F200925865 /* JPDownLoader */ = {
 			isa = PBXGroup;
 			children = (
+				274EC8191F01691E00925865 /* Classes */,
 				274EC7E91F0168F200925865 /* AppDelegate.h */,
 				274EC7EA1F0168F200925865 /* AppDelegate.m */,
 				274EC7EC1F0168F200925865 /* ViewController.h */,
@@ -138,6 +151,21 @@
 				274EC80D1F0168F200925865 /* Info.plist */,
 			);
 			path = JPDownLoaderUITests;
+			sourceTree = "<group>";
+		};
+		274EC8191F01691E00925865 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				274EC81A1F01691E00925865 /* NSString+SZ.h */,
+				274EC81B1F01691E00925865 /* NSString+SZ.m */,
+				274EC81C1F01691E00925865 /* JPDownLoader.h */,
+				274EC81D1F01691E00925865 /* JPDownLoader.m */,
+				274EC81E1F01691E00925865 /* JPDownLoaderManager.h */,
+				274EC81F1F01691E00925865 /* JPDownLoaderManager.m */,
+				274EC8201F01691E00925865 /* JPFileTool.h */,
+				274EC8211F01691E00925865 /* JPFileTool.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274EC8231F01691E00925865 /* JPDownLoader.m in Sources */,
+				274EC8251F01691E00925865 /* JPFileTool.m in Sources */,
+				274EC8221F01691E00925865 /* NSString+SZ.m in Sources */,
 				274EC7EE1F0168F200925865 /* ViewController.m in Sources */,
 				274EC7EB1F0168F200925865 /* AppDelegate.m in Sources */,
 				274EC7E81F0168F200925865 /* main.m in Sources */,
+				274EC8241F01691E00925865 /* JPDownLoaderManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
