@@ -2,9 +2,10 @@
 //  ViewController.m
 //  JPDownLoader
 //
-//  Created by 小码哥 on 2017/1/8.
-//  Copyright © 2017年 JP. All rights reserved.
+//  Created by JUMPING on 2017/5/27.
+//  Copyright © 2017年 JUMPING. All rights reserved.
 //
+
 
 #import "ViewController.h"
 //#import "JPDownLoader.h"
